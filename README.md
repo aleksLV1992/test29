@@ -1,5 +1,5 @@
 1. Сборка докера
-   ````
+
 docker-compose build
 docker-compose up -d
 docker exec -ti app /bin/bash
@@ -9,4 +9,3 @@ php artisan jwt:secret
 php artisan migrate
 php artisan db:seed
 
-   ````
