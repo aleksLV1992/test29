@@ -30,19 +30,6 @@ php artisan migrate
 php artisan db:seed
 
 
-Примечания
-
-- Убедитесь, что в docker-compose.yml сервис PHP называется "app".
-  Если имя другое (например, laravel-app, php, backend), замените "app" в команде docker exec.
-
-- Дождитесь полной инициализации базы данных (PostgreSQL/MySQL) при первом запуске.
-
-- Для полной пересборки:
-  docker-compose down --volumes
-  docker-compose build --no-cache
-  docker-compose up -d
-
-
 Проверка работоспособности
 
 Откройте в браузере:
