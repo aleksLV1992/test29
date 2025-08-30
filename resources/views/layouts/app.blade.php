@@ -24,7 +24,7 @@
 <!-- Навигация -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('cars.index') }}">
+        <a class="navbar-brand" href="{{ route('dashboard') }}">
             {{ config('app.name', 'Автосалон') }}
         </a>
         <div class="navbar-nav ms-auto">

@@ -10,10 +10,14 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     libpq-dev \
-    sqlite3 \
     npm \
+    sqlite3 \
     libsqlite3-dev \
     && rm -rf /var/lib/apt/lists/*
+
+# Установка PHP-расширений
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+RUN docker-php-ext-install pdo_pgsql
 
 # Установка PHP-расширений
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
